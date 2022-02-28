@@ -7,5 +7,3 @@ cd TGVCBot
 yarn
 yarn build
 pm2 start npm --name "tgvc" -- run start --exp-backoff-restart-delay=1000
-pm2 save
-pm2 startup
