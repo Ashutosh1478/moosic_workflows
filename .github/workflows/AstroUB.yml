@@ -1,4 +1,4 @@
-name: AstroUB Workflow
+name: Mossic Workflow
 
 on:
     push:
@@ -28,7 +28,7 @@ jobs:
          continue-on-error: true
          run: |
            git clone https://${{ secrets.GitHubName }}:${{ secrets.GH_TOKEN }}@${{ secrets.CREDS }} asb
-       - name: Running AstroUB
+       - name: Running Moosic
          timeout-minutes: 350
          continue-on-error: true
          run: |
